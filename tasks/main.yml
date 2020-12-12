@@ -1,8 +1,13 @@
 ---
 # tasks file for ansible-role-install-packages
-- name: Install {{ install_what }}
+- name: Updating cache
   pacman:
-    name: "{{ item }}"
-    state: present
     update-cache: true
-    with_items: "{{ packages_list }}"
+  become: true
+
+- name: "Install {{ install_what }}"
+  pacman:
+    name: "{{ packages_list }}"
+    state: present
+  become: true
+
