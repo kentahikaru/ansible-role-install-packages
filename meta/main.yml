@@ -1,6 +1,6 @@
 ---
 galaxy_info:
-  role_name: adduser
+  role_name: installpackages
   author: kentahikaru
   description: Install software for my PC
   license: GPL-2.0-or-later
