@@ -1,0 +1,8 @@
+---
+# tasks file for ansible-role-install-packages
+- name: Install all software
+  pacman:
+    name: "{{ item }}"
+    state: present
+    update-cache: true
+    with_items: "{{ packages_list }}"
