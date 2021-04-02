@@ -38,6 +38,7 @@ packages_list:
   - cups
   - cups-filters
   - cups-pdf
+  - hplip
   - chromium
   - firefox
   - libreoffice
